@@ -1,0 +1,24 @@
+<h2>Profile Component</h2>
+<p>My name is {{ name }} and I am {{ age }} years old.</p>
+
+<img [src]="'https://via.placeholder.com/100'" alt="Profile Image">
+
+<input [(ngModel)]="name" placeholder="Enter your name">
+<input type="number" [(ngModel)]="age" placeholder="Enter your age">
+
+<button (click)="showMessage()">Show Message</button>
+
+<p>{{ message }}</p>
+
+<div *ngIf="age >= 18">
+  <p>You are an adult.</p>
+  <button 
+    (click)="active = !active" 
+    [ngClass]="{ 'active-btn': active, 'inactive-btn': !active }">
+    {{ active ? 'Active' : 'Inactive' }}
+  </button>
+</div>
+
+<ul>
+  <li *ngFor="let item of ITEMS">{{ item }}</li>
+</ul>

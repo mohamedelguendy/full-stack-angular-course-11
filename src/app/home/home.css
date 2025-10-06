@@ -1,0 +1,22 @@
+h2 {
+  color: darkblue;
+}
+input {
+  margin: 5px;
+  padding: 4px;
+}
+button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.active-btn {
+  background-color: green;
+  color: white;
+}
+
+.inactive-btn {
+  background-color: red;
+  color: white;
+}
